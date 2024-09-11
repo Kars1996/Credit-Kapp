@@ -1,8 +1,4 @@
-// Copyright © 2024 Kars (github.com/Kars1996)
-//
-// Not to be shared, replicated or used without prior consent.
-// Contact Kars for any enquiries.
-// #!/usr/bin/env node
+#!/usr/bin/env node
 
 import { cyan, green, white, bold } from "kolorist";
 import prompts from "prompts";

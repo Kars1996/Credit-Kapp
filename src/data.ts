@@ -30,4 +30,8 @@ export const validEndings: EndingProp[] = [
     { suffix: ".html", comment: "<!--", ending: "-->" },
 ];
 
-export const useStuff: string[] = ['"use server"', '"use client"'];
+export const useStuff: string[] = [
+    '"use server"',
+    '"use client"',
+    '"use strict"',
+];

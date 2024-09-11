@@ -1,6 +1,6 @@
 {
   "name": "credit-kapp",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "🎊 Automatically Credit your applications easily.",
   "keywords": [
     "kars"
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "publish": "node scripts/publish.js",
+    "publishscript": "node scripts/publish.js",
     "test": "tsc && node dist/index.js"
   }
 }

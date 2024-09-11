@@ -13,7 +13,7 @@
     "prompts": "^2.4.2"
   },
   "bin": {
-    "create-kapp": "./dist/index.js"
+    "credit-kapp": "./dist/index.js"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",

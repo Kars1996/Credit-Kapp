@@ -1,0 +1,27 @@
+{
+  "name": "credit-kapp",
+  "version": "0.0.1",
+  "description": "🎊 Automatically Credit your applications easily.",
+  "keywords": [
+    "kars"
+  ],
+  "author": "kars",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "kolorist": "^1.8.0",
+    "prompts": "^2.4.2"
+  },
+  "bin": {
+    "create-kapp": "./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/prompts": "^2.4.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "publish": "node scripts/publish.js",
+    "test": "tsc && node dist/index.js"
+  }
+}

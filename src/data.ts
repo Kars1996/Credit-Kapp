@@ -31,4 +31,6 @@ export const useStuff: string[] = [
     '"use server"',
     '"use client"',
     '"use strict"',
+    "#!/usr/bin/env node"
+    
 ];

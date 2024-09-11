@@ -21,24 +21,31 @@ async function main() {
     const resolvedPath = path.resolve(userPath);
 
     const forceFlag = process.argv.includes("--force");
+    const dev = process.argv.includes("--test");
 
     const files = getValidFiles(resolvedPath);
     let finalLen: number;
     finalLen = 0;
+    if (dev) {
+        finalLen = 75125;
+    }
     if (
         await UI.bool(
             `Are you sure you want to add the message to ${cyan(
-                files.length
+                files.length.toLocaleString()
             )} files?`
         )
     ) {
         UI.print("Processing Files...");
-
-        files.forEach((file) => {
-            if (addCommentToFile(file, name, userGithub, message, forceFlag)) {
-                finalLen += 1;
-            }
-        });
+        if (!dev) {
+            files.forEach((file) => {
+                if (
+                    addCommentToFile(file, name, userGithub, message, forceFlag)
+                ) {
+                    finalLen += 1;
+                }
+            });
+        }
     }
 
     UI.end(finalLen);

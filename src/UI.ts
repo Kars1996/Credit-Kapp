@@ -75,7 +75,9 @@ export default class UI {
             console.log(
                 green(
                     `${cyan("o")}   ${bold(
-                        `Successfully added credits to ${cyan(fileLen)} files!`
+                        `Successfully added credits to ${cyan(
+                            fileLen.toLocaleString()
+                        )} files!`
                     )}`
                 )
             );

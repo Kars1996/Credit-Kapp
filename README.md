@@ -1,9 +1,9 @@
-# AutoCredit - Effortless File Attribution Tool ✍️
+# credit-kapp - Effortless File Attribution Tool ✍️
 
-AutoCredit is a CLI tool designed to automatically add custom copyright and attribution messages to your project's source files. Whether you're managing open-source projects or need to quickly credit your work, AutoCredit simplifies the process by appending customized comments to files in your project.
+credit-kapp is a CLI tool designed to automatically add custom copyright and attribution messages to your project's source files. Whether you're managing open-source projects or need to quickly credit your work, credit-kapp simplifies the process by appending customized comments to files in your project.
 
 ```bash
-npm i autocredit@latest -g
+npm i credit-kapp@latest -g
 ```
 
 ## Features 🌟
@@ -24,8 +24,8 @@ npm i autocredit@latest -g
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/kars1996/autocredit.git
-   cd autocredit-cli
+   git clone https://github.com/kars1996/credit-kapp.git
+   cd credit-kapp-cli
    ```
 
 2. Install the required dependencies:
@@ -45,28 +45,28 @@ npm i autocredit@latest -g
 
 ### Usage
 
-Once installed, you can use AutoCredit to add comments to your project's files:
+Once installed, you can use credit-kapp to add comments to your project's files:
 
 1. Start the CLI by running:
    ```bash
-   autocredit
+   credit-kapp
    ```
 
 2. Follow the prompts to enter your name, GitHub handle, and custom message.
 
-3. Provide the directory path, and AutoCredit will handle the rest, appending comments to all valid files.
+3. Provide the directory path, and credit-kapp will handle the rest, appending comments to all valid files.
 
 ### Options
 
 - **`--force`**: Use this flag to bypass checks and add comments even if comments already exist in the files.
    ```bash
-   autocredit --force
+   credit-kapp --force
    ```
 
 ### File Structure
 
 ```plaintext
-autocredit-cli/
+credit-kapp-cli/
 ├── src/
 │   ├── utils.ts          # Utility functions for file parsing and operations.
 │   ├── ui.ts             # Custom UI elements and interactions.
@@ -79,10 +79,10 @@ autocredit-cli/
 
 ### Customizing Messages 🧩
 
-AutoCredit allows for customization of the messages added to your files:
+credit-kapp allows for customization of the messages added to your files:
 
 1. In the CLI, follow the prompt to input your custom copyright message.
-2. To further extend AutoCredit, you can modify the logic in `src/index.ts` to support additional languages or customize the output format.
+2. To further extend credit-kapp, you can modify the logic in `src/index.ts` to support additional languages or customize the output format.
 
 ---
 

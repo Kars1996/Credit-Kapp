@@ -46,9 +46,9 @@ export function addCommentToFile(
     ) || { comment: "//" };
 
     const currentYear = new Date().getFullYear();
-    const copyrightMessage = `${commentSyntax} Copyright © ${currentYear} ${name} (github.com/${github})\n${commentSyntax}\n${commentSyntax} ${message}\n${commentSyntax} Contact ${name} for any enquiries.\n\n\n${
+    const copyrightMessage = `${commentSyntax} Copyright © ${currentYear} ${name} (github.com/${github})\n${commentSyntax}\n${commentSyntax} ${message}\n${commentSyntax} Contact ${name} for any enquiries.\n${
         ending ? ending + "\n" : ""
-    }`;
+    }\n\n`;
 
     const fileContent = fs.readFileSync(file, "utf-8");
 

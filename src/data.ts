@@ -25,6 +25,7 @@ export const validEndings: EndingProp[] = [
     { suffix: ".rs.in", comment: "//" },
     { suffix: ".lua", comment: "--" },
     { suffix: ".html", comment: "<!--", ending: "-->" },
+    { suffix: ".astro", comment: "<!--", ending: "-->" },
 ];
 
 export const useStuff: string[] = [
